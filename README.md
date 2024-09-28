@@ -26,11 +26,16 @@ NIM  : 2309116004
   Read: Menampilkan semua item laundry yang tersimpan.
   Update: Mengubah berat item laundry berdasarkan nama pelanggan.
   Delete: Menghapus item laundry berdasarkan nama pelanggan.
-### Percabangan: Program menggunakan percabangan switch-case untuk memproses pilihan menu yang dimasukkan oleh pengguna.
-### Static Keyword: LaundryService menggunakan variabel dan metode statis untuk mengelola daftar laundry secara global, sehingga data tetap konsisten di seluruh program.
-### ArrayList: Data laundry disimpan dalam ArrayList bernama laundryList, yang memudahkan penambahan, penghapusan, dan pembaruan item.
-### Perulangan (for-each): Digunakan untuk menampilkan semua item laundry yang ada dalam ArrayList.
-### Validasi Input: Terdapat pengecekan untuk memastikan bahwa input yang diberikan oleh pengguna adalah angka yang valid untuk pilihan menu dan berat laundry.
+### Percabangan: 
+Program menggunakan percabangan switch-case untuk memproses pilihan menu yang dimasukkan oleh pengguna.
+### 
+Static Keyword: LaundryService menggunakan variabel dan metode statis untuk mengelola daftar laundry secara global, sehingga data tetap konsisten di seluruh program.
+### ArrayList: 
+Data laundry disimpan dalam ArrayList bernama laundryList, yang memudahkan penambahan, penghapusan, dan pembaruan item.
+### Perulangan (for-each): 
+Digunakan untuk menampilkan semua item laundry yang ada dalam ArrayList.
+### Validasi Input: 
+Terdapat pengecekan untuk memastikan bahwa input yang diberikan oleh pengguna adalah angka yang valid untuk pilihan menu dan berat laundry.
 ## Penjelasan Fungsional:
 ### Input Validation:
 Untuk menghindari error, program menggunakan metode getValidIntInput() dan getValidDoubleInput() yang memvalidasi apakah input merupakan angka yang valid sebelum diproses.
@@ -58,12 +63,3 @@ Pengguna dapat memilih opsi di antara:
 
 
 
-
-
-
-
-
-
-
-
-ChatGPT can make mist
