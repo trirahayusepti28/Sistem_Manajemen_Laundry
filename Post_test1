@@ -1,0 +1,191 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+// Package: laundrymanagement
+class LaundryItem {
+    private String customerName;
+    private String itemType;
+    private double weight; // weight in kg
+
+    // Constructor
+    public LaundryItem(String customerName, String itemType, double weight) {
+        this.customerName = customerName;
+        this.itemType = itemType;
+        this.weight = weight;
+    }
+
+    // Getter methods
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getItemType() {
+        return itemType;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    // Method to display laundry item details
+    public void displayItemDetails() {
+        System.out.println("Customer: " + customerName + ", Item: " + itemType + ", Weight: " + weight + "kg");
+    }
+}
+
+// Package: laundrymanagement.services
+class LaundryService {
+    private static ArrayList<LaundryItem> laundryList = new ArrayList<>();
+
+    // Method to add a laundry item
+    public static void addLaundryItem(LaundryItem item) {
+        laundryList.add(item);
+        System.out.println("Laundry item added successfully!");
+    }
+
+    // Method to display all laundry items
+    public static void displayAllItems() {
+        if (laundryList.isEmpty()) {
+            System.out.println("No laundry items available.");
+        } else {
+            System.out.println("All Laundry Items:");
+            for (LaundryItem item : laundryList) {
+                item.displayItemDetails();
+            }
+        }
+    }
+
+    // Method to remove a laundry item by customer name
+    public static void removeLaundryItem(String customerName) {
+        boolean found = false;
+        for (LaundryItem item : laundryList) {
+            if (item.getCustomerName().equalsIgnoreCase(customerName)) {
+                laundryList.remove(item);
+                System.out.println("Laundry item for " + customerName + " removed successfully!");
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("No laundry item found for customer: " + customerName);
+        }
+    }
+
+    // Method to update laundry item weight by customer name
+    public static void updateLaundryItem(String customerName, double newWeight) {
+        boolean found = false;
+        for (LaundryItem item : laundryList) {
+            if (item.getCustomerName().equalsIgnoreCase(customerName)) {
+                LaundryItem updatedItem = new LaundryItem(item.getCustomerName(), item.getItemType(), newWeight);
+                laundryList.set(laundryList.indexOf(item), updatedItem);
+                System.out.println("Laundry item weight updated successfully for " + customerName);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("No laundry item found for customer: " + customerName);
+        }
+    }
+}
+
+// Main class
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean running = true;
+
+        while (running) {
+            System.out.println("\n=== Sistem Manajemen Laundry ===");
+            System.out.println("1. Tambah Item Laundry");
+            System.out.println("2. Lihat Semua Item Laundry");
+            System.out.println("3. Hapus Item Laundry");
+            System.out.println("4. Update Berat Item Laundry");
+            System.out.println("5. Keluar");
+            System.out.print("Pilih opsi: ");
+
+            int choice = getValidIntInput(scanner);
+
+            switch (choice) {
+                case 1:
+                    // Tambah Item Laundry
+                    System.out.print("Masukkan Nama Pelanggan: ");
+                    String customerName = scanner.nextLine();
+                    System.out.print("Masukkan Jenis Item (pakaian, selimut, dll): ");
+                    String itemType = scanner.nextLine();
+                    System.out.print("Masukkan Berat (kg): ");
+                    double weight = getValidDoubleInput(scanner);
+                    LaundryItem newItem = new LaundryItem(customerName, itemType, weight);
+                    LaundryService.addLaundryItem(newItem);
+                    break;
+
+                case 2:
+                    // Lihat Semua Item Laundry
+                    LaundryService.displayAllItems();
+                    break;
+
+                case 3:
+                    // Hapus Item Laundry
+                    System.out.print("Masukkan Nama Pelanggan untuk dihapus: ");
+                    String nameToRemove = scanner.nextLine();
+                    LaundryService.removeLaundryItem(nameToRemove);
+                    break;
+
+                case 4:
+                    // Update Berat Item Laundry
+                    System.out.print("Masukkan Nama Pelanggan untuk diupdate: ");
+                    String nameToUpdate = scanner.nextLine();
+                    System.out.print("Masukkan Berat Baru (kg): ");
+                    double newWeight = getValidDoubleInput(scanner);
+                    LaundryService.updateLaundryItem(nameToUpdate, newWeight);
+                    break;
+
+                case 5:
+                    // Keluar
+                    System.out.println("Keluar dari sistem. Terima kasih!");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+                    break;
+            }
+        }
+
+        scanner.close();
+    }
+
+    // Method to get valid integer input
+    private static int getValidIntInput(Scanner scanner) {
+        int input;
+        while (true) {
+            try {
+                input = scanner.nextInt();
+                scanner.nextLine(); // consume newline
+                break;
+            } catch (InputMismatchException e) {
+                System.out.print("Masukkan angka yang valid: ");
+                scanner.next(); // clear invalid input
+            }
+        }
+        return input;
+    }
+
+    // Method to get valid double input
+    private static double getValidDoubleInput(Scanner scanner) {
+        double input;
+        while (true) {
+            try {
+                input = scanner.nextDouble();
+                scanner.nextLine(); // consume newline
+                break;
+            } catch (InputMismatchException e) {
+                System.out.print("Masukkan berat dalam angka yang valid (kg): ");
+                scanner.next(); // clear invalid input
+            }
+        }
+        return input;
+    }
+}
