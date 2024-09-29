@@ -20,21 +20,21 @@ NIM  : 2309116004
   - Class Main: Berisi metode main yang menjalankan interaksi utama     
        dengan pengguna melalui menu.
 ## Fitur Program:
-### CRUD:
+### 1. CRUD:
 - Create: Pengguna dapat menambahkan item laundry dengan memasukkan nama 
   pelanggan, jenis item, dan berat item.
 - Read: Menampilkan semua item laundry yang tersimpan.
 - Update: Mengubah berat item laundry berdasarkan nama pelanggan.
 - Delete: Menghapus item laundry berdasarkan nama pelanggan.
-### Percabangan: 
+### 2. Percabangan: 
 Program menggunakan percabangan switch-case untuk memproses pilihan menu yang dimasukkan oleh pengguna.
-### 
-Static Keyword: LaundryService menggunakan variabel dan metode statis untuk mengelola daftar laundry secara global, sehingga data tetap konsisten di seluruh program.
-### ArrayList: 
+### 3. Static Keyword: 
+LaundryService menggunakan variabel dan metode statis untuk mengelola daftar laundry secara global, sehingga data tetap konsisten di seluruh program.
+### 4. ArrayList: 
 Data laundry disimpan dalam ArrayList bernama laundryList, yang memudahkan penambahan, penghapusan, dan pembaruan item.
-### Perulangan (for-each): 
+### 5. Perulangan (for-each): 
 Digunakan untuk menampilkan semua item laundry yang ada dalam ArrayList.
-### Validasi Input: 
+### 6. Validasi Input: 
 Terdapat pengecekan untuk memastikan bahwa input yang diberikan oleh pengguna adalah angka yang valid untuk pilihan menu dan berat laundry.
 ## Penjelasan Fungsional:
 ### Input Validation:
