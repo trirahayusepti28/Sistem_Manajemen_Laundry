@@ -63,19 +63,23 @@ Pengguna dapat memilih opsi di antara:
 # Deskripsi Program
 ## Tampilan Menu Utama
 ![image](https://github.com/user-attachments/assets/9660b882-ec04-44d5-81dc-9ad9e597ff3d)
+Di menu utama ini diperlihatkan menu dari sistem laundry.
 
 ## Create
 ![image](https://github.com/user-attachments/assets/504241a3-2231-4025-b923-6a1271ed2069)
+untuk menu create atau menu 1 penguna diminta untuk memasukkan nama pelangan, jenis item, dan berat dari pakaian yang ingin di laundry.
 
 ## Read
 ![image](https://github.com/user-attachments/assets/86a81685-93b5-4cc8-9e92-a8474321d448)
-
-## Update
-![image](https://github.com/user-attachments/assets/ba82cbe6-ce64-4704-af82-9d4e36ac8bee)
+Untuk menu read atau menu 2, pengguna akan diperlihatkan data laundry dari pelanggan.
 
 ## Delete
 ![image](https://github.com/user-attachments/assets/19a4c3ac-11e5-4c4e-ad43-916c116b0e2b)
+Pada menu delete atau menu 3, pengguna diminta untuk memasukkan nama pelanggan yang ingin di hapus, maka otomaris data penggan tersbut akan terhapus.
 
+## Update
+![image](https://github.com/user-attachments/assets/ba82cbe6-ce64-4704-af82-9d4e36ac8bee)
+Pada menu update atau menu ke 4 ini, pengguna akan diminta untuk memasukkan nama pelanggan yang akan di update berat dari laundrynya, jika telah selesai memasukkan berat yang baru maka otomatis data akan terupdate.
 
 
 
