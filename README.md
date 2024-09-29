@@ -6,7 +6,7 @@ NIM  : 2309116004
 # Penjelasan Program 
 ## Struktur Program:
   Program ini dibagi menjadi tiga bagian utama:
-   - Class LaundryItem: Mewakili item laundry yang dimasukkan ke dalam   
+  - Class LaundryItem: Mewakili item laundry yang dimasukkan ke dalam   
      sistem. Setiap item memiliki properti:
         customerName (nama pelanggan)
         itemType (jenis item laundry, seperti pakaian atau selimut)
