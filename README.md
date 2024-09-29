@@ -21,11 +21,11 @@ NIM  : 2309116004
        dengan pengguna melalui menu.
 ## Fitur Program:
 ### CRUD:
-  Create: Pengguna dapat menambahkan item laundry dengan memasukkan nama 
+- Create: Pengguna dapat menambahkan item laundry dengan memasukkan nama 
   pelanggan, jenis item, dan berat item.
-  Read: Menampilkan semua item laundry yang tersimpan.
-  Update: Mengubah berat item laundry berdasarkan nama pelanggan.
-  Delete: Menghapus item laundry berdasarkan nama pelanggan.
+- Read: Menampilkan semua item laundry yang tersimpan.
+- Update: Mengubah berat item laundry berdasarkan nama pelanggan.
+- Delete: Menghapus item laundry berdasarkan nama pelanggan.
 ### Percabangan: 
 Program menggunakan percabangan switch-case untuk memproses pilihan menu yang dimasukkan oleh pengguna.
 ### 
