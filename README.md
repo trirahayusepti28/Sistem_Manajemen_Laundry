@@ -37,11 +37,11 @@ Digunakan untuk menampilkan semua item laundry yang ada dalam ArrayList.
 ### 6. Validasi Input: 
 Terdapat pengecekan untuk memastikan bahwa input yang diberikan oleh pengguna adalah angka yang valid untuk pilihan menu dan berat laundry.
 ## Penjelasan Fungsional:
-### Input Validation:
+### 1. Input Validation:
 Untuk menghindari error, program menggunakan metode getValidIntInput() dan getValidDoubleInput() yang memvalidasi apakah input merupakan angka yang valid sebelum diproses.
-### Scanner: 
+### 2. Scanner: 
 Digunakan untuk mengambil input dari pengguna, seperti pilihan menu, nama pelanggan, jenis item laundry, dan berat item.
-### Opsi Menu: 
+### 3. Opsi Menu: 
 Pengguna dapat memilih opsi di antara:
 1. Menambahkan item laundry.
 2. Melihat semua item laundry.
