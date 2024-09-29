@@ -60,6 +60,23 @@ Pengguna dapat memilih opsi di antara:
 4. Program memproses input menggunakan metode yang sesuai dari LaundryService.
 5. Setelah selesai, menu ditampilkan kembali hingga pengguna memilih opsi untuk keluar.
 6. Program ini merupakan contoh sederhana dari sistem manajemen berbasis Java yang mencakup berbagai fitur dasar pemrograman, seperti percabangan, loop, ArrayList, dan validasi input.
+# Deskripsi Program
+Tampilan Menu Utama
+![image](https://github.com/user-attachments/assets/9660b882-ec04-44d5-81dc-9ad9e597ff3d)
+
+Create
+![image](https://github.com/user-attachments/assets/504241a3-2231-4025-b923-6a1271ed2069)
+
+Read
+![image](https://github.com/user-attachments/assets/86a81685-93b5-4cc8-9e92-a8474321d448)
+
+Update
+![image](https://github.com/user-attachments/assets/ba82cbe6-ce64-4704-af82-9d4e36ac8bee)
+
+Delete
+![image](https://github.com/user-attachments/assets/19a4c3ac-11e5-4c4e-ad43-916c116b0e2b)
+
+
 
 
 
