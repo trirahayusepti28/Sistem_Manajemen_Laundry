@@ -69,7 +69,7 @@ Di menu utama ini diperlihatkan menu dari sistem laundry.
 ## Create
 ![image](https://github.com/user-attachments/assets/504241a3-2231-4025-b923-6a1271ed2069)
 
-untuk menu create atau menu 1 penguna diminta untuk memasukkan nama pelangan, jenis item, dan berat dari pakaian yang ingin di laundry.
+Untuk menu create atau menu 1 penguna diminta untuk memasukkan nama pelangan, jenis item, dan berat dari pakaian yang ingin di laundry.
 
 ## Read
 ![image](https://github.com/user-attachments/assets/86a81685-93b5-4cc8-9e92-a8474321d448)
