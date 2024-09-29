@@ -11,13 +11,13 @@ NIM  : 2309116004
         customerName (nama pelanggan)
         itemType (jenis item laundry, seperti pakaian atau selimut)
         weight (berat item dalam kilogram)
-    - Class LaundryService: Bertanggung jawab atas manajemen item laundry   
+  - Class LaundryService: Bertanggung jawab atas manajemen item laundry   
       menggunakan ArrayList. Fungsinya meliputi:
         Menambahkan item laundry.
         Menampilkan semua item laundry.
         Menghapus item laundry berdasarkan nama pelanggan.
         Memperbarui berat item laundry.
-     - Class Main: Berisi metode main yang menjalankan interaksi utama     
+  - Class Main: Berisi metode main yang menjalankan interaksi utama     
        dengan pengguna melalui menu.
 ## Fitur Program:
 ### CRUD:
